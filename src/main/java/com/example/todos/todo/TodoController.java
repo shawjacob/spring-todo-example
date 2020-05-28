@@ -32,7 +32,7 @@ public class TodoController {
         return todo;
 
     }
-    
+
     @PutMapping("/{id}")
     public Todo editTodo(@PathVariable long id, @RequestBody Todo todo) {
         Todo existingTodo = new Todo();
